@@ -92,6 +92,9 @@ const Products = () => {
                     Size/Colour: <b>{product.size}</b>
                   </span>
                 </div>
+                <p className="text-gray-500 font-italic text-sm dark:text-stone-500">
+                  {product.notes}
+                </p>
                 <CardFooter className="p-2 flex justify-between items-center">
                   <Link href={product.link} target="_blank">
                     <Button variant="default" className="w-full dark:bg-stone-300 hover:cursor-pointer">
