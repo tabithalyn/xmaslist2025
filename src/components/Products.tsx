@@ -14,6 +14,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import giftCards from "../../public/static/assets/gift-cards.png";
+import stockingStuffers from "../../public/static/assets/stocking-stuffers.png";
 
 const Products = () => {
   const [sortOrder, setSortOrder] = useState("none");
@@ -92,22 +94,59 @@ const Products = () => {
                     Size/Colour: <b>{product.size}</b>
                   </span>
                 </div>
-                <p className="text-gray-500 font-italic text-sm dark:text-stone-500">
-                  {product.notes}
-                </p>
-                <CardFooter className="p-2 flex justify-between items-center">
-                  <Link href={product.link} target="_blank">
-                    <Button variant="default" className="w-full dark:bg-stone-300 hover:cursor-pointer">
-                      <span className="w-full flex flex-wrap justify-center items-center dark:text-stone-800 dark:outline-stone-900">
-                        View Product
-                        <SquareArrowOutUpRight width={20} height={20} className="ml-2" />
-                      </span>
-                    </Button>
-                  </Link>
+                <CardFooter className="p-2 flex justify-center items-center flex-wrap">
+                  <div className="w-full flex justify-center">
+                    <Link href={product.link} target="_blank">
+                      <Button variant="default" className="w-full dark:bg-stone-300 hover:cursor-pointer">
+                        <span className="w-full flex flex-wrap justify-center items-center dark:text-stone-800 dark:outline-stone-900">
+                          View Product
+                          <SquareArrowOutUpRight width={20} height={20} className="ml-2" />
+                        </span>
+                      </Button>
+                    </Link>
+                  </div>
+                  <p className="text-gray-500 italic text-sm dark:text-stone-500 mt-6 p-2">
+                    {product.notes}
+                  </p>
                 </CardFooter>
               </CardContent>
             </Card>
           ))}
+          <Card className="overflow-hidden">
+            <CardContent className="p-6 flex flex-wrap justify-center items-center">
+              <div className="flex justify-center items-center h-80 bg-gray-100 dark:bg-gray-900 rounded-md mb-4 relative overflow-hidden w-full">
+                <Image
+                  src={giftCards}
+                  alt="gift cards"
+                  className="object-cover dark:opacity-80"
+                />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2 w-full text-center h-16 dark:text-stone-200/80">Gift Cards</h3>
+              <p className="text-gray-600 mb-4 text-xl font-medium dark:text-stone-400">
+                American Eagle<br />
+                Sephora<br />
+                Tim Hortons<br />
+                Sport Chek
+              </p>
+            </CardContent>
+          </Card>
+          <Card className="overflow-hidden">
+            <CardContent className="p-6 flex flex-wrap justify-center items-center">
+              <div className="flex justify-center items-center h-80 bg-gray-100 dark:bg-gray-900 rounded-md mb-4 relative overflow-hidden w-full">
+                <Image
+                  src={stockingStuffers}
+                  alt="stocking stuffers"
+                  className="object-cover dark:opacity-80"
+                />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2 w-full text-center h-16 dark:text-stone-200/80">Stocking Stuffers</h3>
+              <p className="text-gray-600 mb-4 text-xl font-medium dark:text-stone-400">
+                Pur Gum (NOT cinnamon)<br />
+                K-Cups coffee<br />
+                Hand cream<br />
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </main>
     </div>

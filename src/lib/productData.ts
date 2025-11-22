@@ -11,6 +11,9 @@ import flexraJeans from "../../public/static/assets/flexra-jeans.png";
 import hanesHoodie from "../../public/static/assets/hanes-hoodie.png";
 import ritualsGiftSet from "../../public/static/assets/rituals-gift-set.png";
 import ceraveMoisturizer from "../../public/static/assets/cerave-moisturizer.png"
+import hairClips from "../../public/static/assets/hair-clips.png";
+import elvisVinyl from "../../public/static/assets/elvis-vinyl.png";
+// import from "../../public/static/assets/.png";
 
 export const PRODUCTS = [
   {
@@ -142,6 +145,26 @@ export const PRODUCTS = [
     "size": "539g",
     "notes": "Black Friday deal, if it's not on sale, don't bother, unless it's on sale somewhere else.",
     "link": "https://www.amazon.ca/CeraVe-Moisturizing-Moisturizer-Hyaluronic-Fragrance/dp/B083GGFTPW?ref=dlx_black_dg_dcl_B083GGFTPW_dt_sl7_1d_pi&pf_rd_r=RHXMK3JB6P9MMB4TZZCD&pf_rd_p=d19cbee5-20a5-4a7a-bfd8-3675fe27ee1d&th=1"
+  },
+  {
+    "id": 13,
+    "src": hairClips,
+    "title": "5pc Large Claw Hair Clips",
+    "price": 10,
+    "store": "Amazon",
+    "size": "N/A",
+    "notes": "Doesn't have to be these exact ones, could be something similar.",
+    "link": "https://www.amazon.ca/Clips%EF%BC%8CNonslip-Suitable-Fashion-Styling-Accessories/dp/B09G6K8WKX/ref=hw_25_a_dag_g_6abb?pf_rd_p=0abbd576-e652-47bf-bac1-1ef8553c4115&pf_rd_r=16C196WCH7H8998XNMSR&sr=1-11-6dbc78f1-193d-42a3-b916-c15ee0cd7725"
+  },
+  {
+    "id": 14,
+    "src": elvisVinyl,
+    "title": "Elvis Presley Limited Edition Vinyl",
+    "price": 35,
+    "store": "Amazon",
+    "size": "N/A",
+    "notes": "",
+    "link": "https://www.amazon.ca/Elvis-Presley-Tracks-Limited-Transparent/dp/B07FY64R9X/ref=sr_1_2?crid=1P272KKO2G8GF"
   }
 ];
 
