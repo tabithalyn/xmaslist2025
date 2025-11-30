@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/select";
 import giftCards from "../../public/static/assets/gift-cards.png";
 import stockingStuffers from "../../public/static/assets/stocking-stuffers.png";
+import snowflakesBg from "../../public/static/assets/snowflakes.jpg";
 
 const Products = () => {
   const [sortOrder, setSortOrder] = useState("none");
@@ -32,8 +33,8 @@ const Products = () => {
     });
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-stone-950">
-      <header className="bg-white dark:bg-stone-950/10 shadow-sm">
+    <div className="min-h-screen bg-gray-50 dark:bg-stone-900/20 headerBgLight">
+      <header className="dark:bg-stone-950/90 shadow-sm bg-stone-50 sticky top-0 w-full z-50">
         <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 gap-2 flex justify-center items-center">
           <Select
             value={storeFilter}
@@ -88,7 +89,7 @@ const Products = () => {
                   />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2 w-full text-center h-10 dark:text-stone-200/80">{product.title}</h3>
-                <h5 className="w-full h-5 text-center mt-6 mb-2">{product.store}</h5>
+                <h5 className="w-full h-5 text-center mt-10 mb-2 uppercase tracking-wider text-sm">{product.store}</h5>
                 <p className="text-gray-600 mb-4 text-xl font-medium dark:text-stone-400">${product.price.toFixed(2)}</p>
                 <div className="flex items-center mb-4 w-full">
                   <span className="text-sm text-gray-600 w-full text-center dark:text-stone-400">

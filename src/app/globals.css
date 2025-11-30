@@ -119,3 +119,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+.headerBgLight {
+  background-image: url("/static/assets/plaidbg.jpeg");
+  background-size: 35%;
+}
