@@ -13,6 +13,8 @@ import ritualsGiftSet from "../../public/static/assets/rituals-gift-set.png";
 import ceraveMoisturizer from "../../public/static/assets/cerave-moisturizer.png"
 import hairClips from "../../public/static/assets/hair-clips.png";
 import elvisVinyl from "../../public/static/assets/elvis-vinyl.png";
+import burtsBees from "../../public/static/assets/burts-bees.png";
+import roundSunglasses from "../../public/static/assets/round-sunglasses.png";
 // import from "../../public/static/assets/.png";
 
 export const PRODUCTS = [
@@ -69,7 +71,7 @@ export const PRODUCTS = [
   {
     "id": 5,
     "src": openCardigan,
-    "title": "Casual Ribbed Brushed Open Front",
+    "title": "Casual Ribbed Open Front Cardigan",
     "price": 16,
     "store": "Shein",
     "size": "XL, Rust Brown",
@@ -165,6 +167,26 @@ export const PRODUCTS = [
     "size": "N/A",
     "notes": "",
     "link": "https://www.amazon.ca/Elvis-Presley-Tracks-Limited-Transparent/dp/B07FY64R9X/ref=sr_1_2?crid=1P272KKO2G8GF"
+  },
+  {
+    "id": 15,
+    "src": burtsBees,
+    "title": "Burt's Bees Lip Shimmer Pack of 3",
+    "price": 17,
+    "store": "Amazon",
+    "size": "N/A",
+    "notes": "Or any one of these flavours bought separately",
+    "link": "https://www.amazon.ca/Burts-Bees-Collection-Luminescent-Moisture/dp/B0DKF34N9R/ref=sr_1_1?crid=37XZ5QAVLQRRL"
+  },
+  {
+    "id": 16,
+    "src": roundSunglasses,
+    "title": "Retro Classic Round UV Protection Sunglasses",
+    "price": 5,
+    "store": "Shein",
+    "size": "Lens Color - Grey",
+    "notes": "",
+    "link": "https://ca.shein.com/1PC-Women-Plastic-Retro-Classic-Round-UV-Protection-Sunglasses-For-Hiking-Vacation-Accessories-Beach-Accessories-For-Women-Sun-Glasses-Sunglasses-Shades-Basics-And-Suit-For-Sweater-Jeans-Sweatpants-Hoodie-Jackets-Dress-And-Long-Sleeve-Shirt-Fashionable-Shade-Elegant-Outfit-Family-Outings-Travel-Vacation-Holiday-For-Summer-Beach-Vacation-Outdoor-Travel-p-14026940.html"
   }
 ];
 

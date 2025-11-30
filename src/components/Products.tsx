@@ -87,7 +87,8 @@ const Products = () => {
                     className="object-cover dark:opacity-80"
                   />
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2 w-full text-center h-16 dark:text-stone-200/80">{product.title}</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2 w-full text-center h-10 dark:text-stone-200/80">{product.title}</h3>
+                <h5 className="w-full h-5 text-center mt-6 mb-2">{product.store}</h5>
                 <p className="text-gray-600 mb-4 text-xl font-medium dark:text-stone-400">${product.price.toFixed(2)}</p>
                 <div className="flex items-center mb-4 w-full">
                   <span className="text-sm text-gray-600 w-full text-center dark:text-stone-400">
@@ -126,6 +127,7 @@ const Products = () => {
                 American Eagle<br />
                 Sephora<br />
                 Tim Hortons<br />
+                Starbucks<br />
                 Sport Chek
               </p>
             </CardContent>
